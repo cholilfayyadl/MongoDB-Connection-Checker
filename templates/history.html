@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Riwayat Koneksi MongoDB</h4>
+                </div>
+                <div class="card-body">
+                    <h5 class="mb-4">Daftar Riwayat Koneksi</h5>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Connection String</th>
+                                <th>Error / Success</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in history %}
+                                <tr>
+                                    <td>{{ item.no }}</td>
+                                    <td>{{ item.connection_string }}</td>
+                                    <td>{{ item.error }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary w-100 mt-3">Kembali ke Halaman Utama</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
