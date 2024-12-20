@@ -73,11 +73,11 @@ The application will be available at `http://127.0.0.1:5000/`.
 
 ## Example Output
 
-- **Successful Connection:**
-  ![Success Message](https://via.placeholder.com/600x200.png?text=Database+Connected+Successfully)
+- **Home:**
+  ![Success Message](https://github.com/cholilfayyadl/MongoDB-Connection-Checker/blob/main/templates/img/home.png?raw=true)
 
 - **Failed Connection:**
-  ![Error Message](https://via.placeholder.com/600x200.png?text=Error+Connecting+to+Database)
+  ![Error Message](https://github.com/cholilfayyadl/MongoDB-Connection-Checker/blob/main/templates/img/riwayat.png?raw=true)
 
 ## Troubleshooting
 
